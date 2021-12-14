@@ -1,0 +1,709 @@
+ * {
+     margin: 0px;
+     padding: 0px;
+     color: whitesmoke;
+     line-height: 1.5;
+ }
+
+
+
+ /*header and header grids*/
+
+
+ .logoSize {
+     width: 90%;
+ }
+
+ .nav_index:hover {
+     transform: scale(1.3);
+ }
+
+
+
+ /* desktop*/
+
+ @media screen and (min-width:1200px) {
+     .header_nav {
+         background-image: url(../assets/img/black.png);
+         height: 150px;
+         background-repeat: repeat-x;
+         font-family: "Dwarven";
+         grid-area: header;
+         font-size: 45px;
+         display: grid;
+         grid-template-areas: "index mods dlcs heroes contactus";
+         grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+     }
+ }
+
+ /*tablet*/
+
+ @media screen and (max-width:1199px) {
+     .header_nav {
+         background-image: url(../assets/img/black.png);
+         height: 150px;
+         background-repeat: repeat-x;
+         font-family: "Dwarven";
+         grid-area: header;
+         font-size: 40px;
+         display: grid;
+         grid-template-areas: "index mods dlcs heroes contactus";
+         grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+     }
+ }
+
+ /* mobile*/
+
+ @media screen and (max-width:768px) {
+     .header_nav {
+         background-image: url(../assets/img/black.png);
+         height: 150px;
+         background-repeat: repeat-x;
+         font-family: "Dwarven";
+         grid-area: header;
+         font-size: 25px;
+         display: grid;
+         grid-template-areas: "index mods dlcs heroes contactus";
+         grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+     }
+ }
+
+
+ .nav_index {
+     width: 70%;
+     grid-area: index;
+ }
+
+ .nav_mods {
+     grid-area: mods;
+ }
+
+ .nav_dlcs {
+     grid-area: dlcs;
+ }
+
+ .nav_heroes {
+     grid-area: heroes;
+ }
+
+ .nav_contactus {
+     grid-area: contactus;
+ }
+
+ /*Index h1*/
+ .index_h1 {
+     font-family: "Dwarven";
+     font-weight: normal;
+ }
+
+
+
+ /*index section*/
+
+
+ /* Index background, main grids and responsive */
+
+ /* desktop*/
+
+ @media screen and (min-width:1200px) {
+     #Index {
+         background-image: url(../assets/img/ruin.png);
+         background-size: cover;
+         display: grid;
+         grid-template-areas: "header""section1a""footer";
+         grid-template-rows: 2fr 3fr 0.5fr;
+         grid-row-gap: 50px;
+     }
+ }
+
+ /* tablet*/
+
+ @media screen and (max-width:1199px) {
+     #Index {
+         background-image: url(../assets/img/ruin.png);
+         background-size: cover;
+         display: grid;
+         grid-template-areas: "header""section1a""footer";
+         grid-template-rows: 1fr 2fr 0.5fr;
+         grid-row-gap: 20px;
+     }
+ }
+
+ /* mobile*/
+
+ @media screen and (max-width:768px) {
+     #Index {
+         background-image: url(../assets/img/ruin.png);
+         background-size: cover;
+         display: grid;
+         grid-template-areas: "header""section1a""footer";
+         grid-template-rows: 1fr 2fr 0.2fr;
+         grid-row-gap: 10px;
+     }
+ }
+
+
+ /* desktop*/
+ @media screen and (min-width:1200px) {
+     .section1_index {
+         grid-area: section1a;
+         display: grid;
+         grid-template-areas: "indexh1 indexh2 indexh3";
+         grid-template-rows: 1fr;
+         font-size: 3vh;
+
+     }
+ }
+
+ /*tablet*/
+ @media screen and (max-width:1199px) {
+     .section1_index {
+         grid-area: section1a;
+         display: grid;
+         grid-template-areas: "indexh1 indexh2 indexh3";
+         grid-template-rows: 1fr;
+         font-size: 2.3vh;
+     }
+ }
+
+ /*mobile*/
+ @media screen and (max-width:768px) {
+     .section1_index {
+         grid-area: section1a;
+         display: grid;
+         grid-template-areas: "indexh1 indexh2 indexh3";
+         grid-template-rows: 1fr;
+         font-size: 1.7vh;
+     }
+ }
+
+
+
+ .section1_ul-h1 {
+     grid-area: indexh2;
+ }
+
+ .section1_index--ul {
+     list-style-image: url(../assets/img/list_icon.png);
+ }
+
+ .section1_index--li1,
+ .section1_index--li2,
+ .section1_index--li3,
+ .section1_index--li4 {
+     padding: 10px;
+ }
+
+ /* mods*/
+
+
+ #backgroundMods {
+     background-image: url(../assets/img/wall.webp);
+ }
+
+
+ /*Mods h1*/
+ .mods_h1 {
+     font-family: "Dwarven";
+     font-weight: normal;
+     font-size: 40px;
+     margin-bottom: 50px;
+     text-align: center;
+ }
+
+ /*mods section*/
+ #section1_mods {
+     padding: 50px;
+     background-color: rgba(0, 0, 0, 0.4);
+
+     display: flex;
+     flex-direction: column;
+ }
+
+
+
+ .mod_video {
+     padding: 30px;
+ }
+
+ /*contact*/
+
+
+ #backgroundContact {
+     background-image: url(../assets/img/books.png);
+     background-repeat: repeat;
+     background-size: cover;
+ }
+
+ /*contact section*/
+
+
+ .contact_h1 {
+     font-family: "Dwarven";
+     font-weight: normal;
+     font-size: 40px;
+ }
+
+
+ #contact_container {
+     background-color: rgb(0, 0, 0, 0.6);
+     margin-top: 90px;
+     text-align: center;
+ }
+
+ .form-control {
+     background-color: rgba(0, 0, 0, 0.685);
+ }
+
+ .letter {
+     width: 25%;
+ }
+
+
+ .contact_button {
+     margin: 10px;
+     color: black;
+     padding: 20px;
+     display: flex;
+     animation-name: contact_button-effect;
+     animation-iteration-count: infinite;
+     animation-duration: 8s;
+     background: linear-gradient(168deg, rgba(255, 0, 0, 1) 0%, rgba(222, 163, 61, 1) 50%, rgba(255, 0, 0, 1) 100%);
+ }
+
+ @keyframes contact_button-effect {
+     0% {
+         background: linear-gradient(168deg, rgba(255, 0, 0, 1) 0%, rgba(222, 163, 61, 1) 50%, rgba(255, 0, 0, 1) 100%);
+         margin-left: 50%;
+
+     }
+
+     50% {
+         background: linear-gradient(168deg, rgba(222, 163, 61, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(222, 163, 61, 1) 100%);
+         margin-left: 70%;
+     }
+
+     75% {
+         background: linear-gradient(168deg, rgba(255, 0, 0, 1) 0%, rgba(222, 163, 61, 1) 50%, rgba(255, 0, 0, 1) 100%);
+         margin-left: 30%;
+     }
+
+     100% {
+         background: linear-gradient(168deg, rgba(222, 163, 61, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(222, 163, 61, 1) 100%);
+         margin-left: 50%;
+     }
+ }
+
+
+ /*heroes*/
+
+ /*heroes section*/
+
+ #backgroundHeroes {
+     background-image: url(../assets/img/hope.jpg);
+ }
+
+
+ /*desktop*/
+
+ .heroes_section1_h1 {
+     font-family: "Dwarven";
+     font-weight: normal;
+     font-size: 40px;
+ }
+
+
+ .section1Nav {
+     background-image: url(../assets/img/black2.png);
+     height: 350px;
+     opacity: 0.8;
+
+ }
+
+
+ .heroesList {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     padding-top: 150px;
+
+ }
+
+
+ .section1_heroes {
+     text-align: center;
+     font-family: "Dwarven";
+     font-weight: normal;
+     font-size: 30px;
+     height: 400px;
+     list-style: none;
+ }
+
+ .section2_heroes {
+     background-color: rgb(0, 0, 0, 0.6);
+     padding: 100px;
+     width: 600px;
+     text-align: center;
+     margin-left: 28%;
+     list-style-image: url(../assets/img/list_icon.png);
+ }
+
+ /*heroes imgs*/
+ #crusaderImg {
+     width: 210px;
+ }
+
+ #vestalImg {
+     width: 150px;
+ }
+
+ #bounty_hunterImg {
+     width: 340px;
+ }
+
+ #leperImg {
+     width: 290px;
+ }
+
+ #manatarmsImg {
+     width: 300px;
+ }
+
+ #librarianImg {
+     width: 150px;
+ }
+
+ #houndmasterImg {
+     width: 200px;
+ }
+
+
+
+ /*dlcs*/
+
+ /* dlc background, main grids and responsive */
+
+ /*desktop*/
+ @media screen and (min-width:1200px) {
+     #dlcs {
+         background-image: url(../assets/img/cave.png);
+         background-repeat: no-repeat;
+         background-size: cover;
+         display: grid;
+         grid-template-areas: "header""section1""footer";
+         grid-template-rows: 0.8fr 2.5fr 0.2fr;
+         grid-row-gap: 10px;
+     }
+ }
+
+ /*tablet*/
+ @media screen and (max-width:1199px) {
+     #dlcs {
+         background-image: url(../assets/img/cave.png);
+         background-repeat: no-repeat;
+         background-size: cover;
+         display: grid;
+         grid-template-areas: "header""section1""footer";
+         grid-template-rows: 0.3fr 2.5fr 0.2fr;
+         grid-row-gap: 10px;
+     }
+ }
+
+ /*mobile*/
+ @media screen and (max-width:768px) {
+     #dlcs {
+         background-image: url(../assets/img/cave.png);
+         background-repeat: no-repeat;
+         background-size: cover;
+         display: grid;
+         grid-template-areas: "header""section1""footer";
+         grid-template-rows: 0.3fr 2.5fr 0.2fr;
+         grid-row-gap: 10px;
+     }
+ }
+
+
+ /*dlcs section and main grid*/
+
+ /*desktop*/
+ @media screen and (min-width:1200px) {
+     .section1_dlcs {
+         text-align: center;
+         font-family: "Dwarven";
+         font-size: 30px;
+         grid-area: section1;
+         background-color: rgb(0, 0, 0, 0.4);
+         display: grid;
+         grid-template-areas: "h h1 x""item1 item2 item3";
+         grid-template-rows: 0.1fr;
+         grid-template-columns: 3fr 3fr 3fr;
+         grid-row-gap: 50px;
+     }
+ }
+
+ /*tablet*/
+ @media screen and (max-width:1199px) {
+     .section1_dlcs {
+         text-align: center;
+         font-family: "Dwarven";
+         font-size: 30px;
+         grid-area: section1;
+         background-color: rgb(0, 0, 0, 0.4);
+         display: grid;
+         grid-template-areas: "h1""item1""item2""item3";
+         grid-template-rows: 0.1fr 1fr 1fr 1fr;
+         grid-row-gap: 50px;
+         display: flex;
+         flex-direction: column;
+     }
+ }
+
+ /*mobile*/
+ @media screen and (max-width:768px) {
+     .section1_dlcs {
+         text-align: center;
+         font-family: "Dwarven";
+         font-size: 30px;
+         grid-area: section1;
+         background-color: rgb(0, 0, 0, 0.4);
+         display: grid;
+         grid-template-areas: "h1""item1""item2""item3";
+         grid-template-rows: 0.1fr;
+         grid-template-columns: 3fr 3fr 3fr;
+         grid-row-gap: 50px;
+         display: flex;
+         flex-direction: column;
+     }
+ }
+
+
+
+
+
+ /* dlc section main grids */
+
+
+ .section1_dlcs-item1 {
+     grid-area: item1;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+
+
+ }
+
+ .section1_dlcs-item2 {
+     grid-area: item2;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+
+ }
+
+ .section1_dlcs-item3 {
+     grid-area: item3;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+
+ }
+
+ /*item 1 and game1*/
+
+ #item1_titulo {
+     grid-area: title1;
+     margin: 10px;
+ }
+
+ #game1 {
+     grid-area: game1;
+     margin: 10px;
+
+ }
+
+
+
+ /*item 2 title and game2*/
+ #item2_titulo {
+     grid-area: title2;
+     margin: 10px;
+ }
+
+ #game2 {
+     grid-area: game2;
+     margin: 10px;
+
+ }
+
+ /*item 3 title and game3*/
+
+ #item3_titulo {
+     grid-area: title3;
+     margin: 10px;
+
+ }
+
+ #game3 {
+     grid-area: game3;
+     margin: 10px;
+
+ }
+
+
+
+ /*dlc buttons*/
+
+ /*item 1 button 1*/
+
+ #button1 {
+     background-color: black;
+     color: whitesmoke;
+     width: 200px;
+     padding: 25px;
+     font-weight: bold;
+     font-size: 25px;
+     grid-area: button1;
+     margin: 10px;
+ }
+
+
+
+ /*item 1 button 2*/
+
+ #button2 {
+     background-color: black;
+     color: whitesmoke;
+     width: 200px;
+     padding: 25px;
+     font-weight: bold;
+     font-size: 25px;
+     grid-area: button2;
+     margin: 10px;
+ }
+
+
+
+
+ /*item 1 button 3*/
+
+ #button3 {
+     background-color: black;
+     color: whitesmoke;
+     width: 200px;
+     padding: 25px;
+     font-weight: bold;
+     font-size: 25px;
+     grid-area: button3;
+     margin: 10px;
+ }
+
+
+ /*buttons color effect*/
+
+ #button1:hover,
+ #button2:hover,
+ #button3:hover {
+     color: orangered;
+ }
+
+
+
+
+ /*dlc h1 weigh*/
+
+ /*section1 h1 title size responsive*/
+
+
+ /*desktop*/
+ @media screen and (min-width:1200px) {
+     .dlc_section1-h1 {
+         font-weight: normal;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         grid-area: h1;
+         text-decoration: underline;
+
+     }
+ }
+
+ /*tablet*/
+ @media screen and (max-width:1199px) {
+     .dlc_section1-h1 {
+         font-weight: normal;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         grid-area: h1;
+         text-decoration: underline;
+         font-size: 28px;
+
+     }
+ }
+
+ /*mobile check here*/
+
+
+
+
+
+ .dlc_section1-h1 {
+     font-weight: normal;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     grid-area: h1;
+     text-decoration: underline;
+ }
+
+
+
+
+
+
+
+ /*footer*/
+ footer {
+     background-color: rgb(0, 0, 0, 0.4);
+     grid-area: footer;
+     display: grid;
+     grid-template-areas: "social shops";
+     grid-template-columns: 1fr 1fr;
+ }
+
+ .footer_section1 {
+     grid-area: social;
+     display: flex;
+     align-items: flex-end;
+     padding-top: 86px;
+     margin-bottom: 10px;
+ }
+
+ .footer_section2 {
+     grid-area: shops;
+     display: flex;
+     align-items: flex-end;
+     justify-content: flex-end;
+     margin-bottom: 10px;
+ }
+
+ /*links*/
+
+
+ a {
+     color: whitesmoke;
+     text-decoration: none;
+
+ }
+
+ a:hover {
+     color: orangered;
+     transform: scale(1.8);
+     text-decoration: none;
+ }
+
+ /*font*/
+ @font-face {
+     font-family: Dwarven;
+     src: url(../assets/fonts/DwarvenAxe\ BB\ W00\ Regular.ttf);
+ }
